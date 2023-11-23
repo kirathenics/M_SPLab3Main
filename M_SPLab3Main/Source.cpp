@@ -6,7 +6,7 @@ int main()
     setlocale(0, "");
 
     std::string libName = "StringFunctionsDll.dll";
-    HMODULE hDLL = LoadLibrary((LPCSTR)"StringFunctionsDll.dll");  // загрузить библиотеку
+    HMODULE hDLL = LoadLibrary((LPCSTR)libName.c_str());  // загрузить библиотеку
 
     if (hDLL == NULL)
     {
